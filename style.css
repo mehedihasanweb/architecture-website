@@ -108,7 +108,6 @@ main{
 }
 .features-items, .features-image{
     padding-bottom: 30px;
-    width: 50%;
 }
 .features-topic h2{
     border-left: 5px solid #FF900E;
@@ -212,7 +211,9 @@ main{
     background-color: #FFF4E7;
     border-radius: 6px;
 }
+/* footer section */
 .footer-section{
+    width: 100%;
     color: rgb(211, 197, 197);
     padding: 30px 0;
     background-color: rgb(27, 27, 61);
@@ -234,24 +235,20 @@ main{
     list-style: none;
     
 }
+/* media query section */
+
 @media only screen and (max-width: 576px){
     body{
         background-color: #fff;
     }
-    .nav-container, .features-list-items{
-        flex-direction: column;
-    }
-    .nav-item{
-        flex-direction: column;
-    }
-    .top-list-image, .bottom-list-image{
+    .nav-container, .features-list-items,.nav-item,.top-list-image, .bottom-list-image, .features-container{
         flex-direction: column;
     }
     .features-list-images,
     .features-list-titles{
         width: 100%;
     }
-    .features-list-titles{
+    .features-list-titles, .sponsore{
         width: 100%;
         text-align: center;
     }
@@ -265,10 +262,6 @@ main{
         width: 70%;
         margin: 0 auto;
     }
-    .sponsore{
-        width: 100%;
-        text-align: center;
-    }
     .sponsore-site{
         flex-direction: column;
         align-items: center;
@@ -276,9 +269,9 @@ main{
     }
     .sponsore-site img{
         width: 50%;
-        height: 100%;
     }
-    .footer-section{
+    .features-items, .features-image{
+        border: 1px solid;
         width: 100%;
         margin: 0 auto;
     }

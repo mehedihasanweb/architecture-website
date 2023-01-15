@@ -178,6 +178,11 @@ main{
     padding: 50px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: 1.2s;
+}
+.items:hover {
+    transform: scale(1.2);
+
 }
 /* sponsore section */
 .sponsore{
@@ -194,7 +199,6 @@ main{
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-    /* padding-bottom: 70px; */
 }
 .copyright{
     margin-top: 100px;
@@ -242,5 +246,18 @@ footer{
         color: #727272;
         width: 70%;
         margin: 0 auto;
+    }
+    .sponsore{
+        width: 100%;
+        text-align: center;
+    }
+    .sponsore-site{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .sponsore-site img{
+        width: 50%;
+        height: 100%;
     }
 }

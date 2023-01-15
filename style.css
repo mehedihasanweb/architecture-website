@@ -1,0 +1,246 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+main{
+    background-color: white;
+}
+.primary{
+    color: #FF900E;
+}
+.secondary{
+    color: #727272;
+}
+.tertiary{
+    color: #131313;
+}
+
+/* -------------------
+     navbar styles    
+---------------------*/
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
+}
+.nav-item{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+/* new group */
+.naw-group{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.naw-group img{
+    width: 100%;
+}
+.new-group-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.group-title{
+    font-size: 60px;
+    color: #131313;
+    margin-bottom: 30px;
+}
+.group-description{
+    width: 850px;
+    margin: 0 auto;
+    color: #9a9595;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.button-primary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+/* new features */
+.features-list-items{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.top-list-image, .bottom-list-image{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.features-list-images, .features-list-titles{
+    width: 50%;
+}
+.features-list-titles h2{
+    font-size: 40px;
+}
+.features-list-titles p{
+    font-size: 16px;
+    padding: 20px 0;
+    color: #727272;
+}
+/* features section */
+.features-container{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    gap: 100px;
+    padding-top: 130px;
+}
+.features-items, .features-image{
+    padding-bottom: 30px;
+    width: 50%;
+}
+.features-topic h2{
+    border-left: 5px solid #FF900E;
+    height: 100px;
+}
+.features-title{
+    font-size: 45px;
+    padding: 0 20px;
+}
+.features-description{
+    font-size: 15px;
+    width: 586px;
+    padding: 30px 20px;
+}
+.features-qualities{
+    width: 586px;
+    padding: 30px 42px 30px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.features-image img{
+    height: 800px;
+}
+.quality-title{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.experience-button{
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 42px;
+    border: none;
+    margin: -100px -70px;
+    color: white;
+}
+.larg-font{
+    font-size: 65px;
+}
+/* some fact */
+.fact-section{
+    padding-top: 100px;
+}
+.some-fact-section{
+    padding-top: 100px;
+    width: 1440px;
+    margin: 0 auto;
+}
+.some-fact, .sponsor-title{
+    font-size: 45px;;
+}
+.fact-description{
+    padding-bottom:100px;
+    width: 400px;
+}
+/* fact items */
+.fact-items{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.items{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+/* sponsore section */
+.sponsore{
+    text-align: center;
+    padding-top: 150px;
+}
+.sponsor-description{
+    width: 500px;
+    margin: 0 auto;
+}
+.sponsore-site{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 70px; */
+}
+.copyright{
+    margin-top: 100px;
+}
+.copyright-item{
+    padding: 30px 0;
+    text-align: center;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+    border-radius: 6px;
+}
+footer{
+    height: 100px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 576px){
+    body{
+        background-color: #fff;
+    }
+    .nav-container, .features-list-items{
+        flex-direction: column;
+    }
+    .nav-item{
+        flex-direction: column;
+    }
+    .top-list-image, .bottom-list-image{
+        flex-direction: column;
+    }
+    .features-list-images,
+    .features-list-titles{
+        width: 100%;
+    }
+    .features-list-titles{
+        width: 100%;
+        text-align: center;
+    }
+    .features-list-titles h2{
+        font-size: 40px;
+    }
+    .features-list-titles p{
+        font-size: 16px;
+        padding: 20px 0;
+        color: #727272;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
